@@ -47,4 +47,14 @@ public class Game {
             }
         } while (!accepted);
     }
+
+    public static void increaseAge(Person person1, Person person2) {
+        person1.setAge(person1.getAge() + 1);
+        person2.setAge(person2.getAge() + 1);
+    }
+
+    public static void printAge(Person person1, Person person2) {
+        System.out.println(person1.getName() + " is " + person1.getAge() + " years old");
+        System.out.println(person2.getName() + " is " + person2.getAge() + " years old");
+    }
 }

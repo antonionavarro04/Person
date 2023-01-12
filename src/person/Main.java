@@ -18,11 +18,14 @@ public class Main {
         System.out.println();
 
         System.out.println("Press 'enter' to start ");
+        read.nextLine();
 
         do {
-            person1.setAge(person1.getAge() + 1);
-            person2.setAge(person2.getAge() + 1);
-
+            System.out.println("Turn " + (100 - remainingTurns));
+            Game.printAge(person1, person2);
+            Game.increaseAge(person1, person2);
+            Game.printAge(person1, person2);
+ 
             System.out.println("Is your turn");
 
             remainingTurns--;
