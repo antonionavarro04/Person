@@ -2,3 +2,11 @@ Jobs 1.0 / 2023-01-12 | 01:41p.m.
 0. Unemployed
 1. Programmer
 2. Doctor
+3. Teacher - Unavailable
+4. Engineer - Unavailable
+5. Nurse - Unavailable
+6. Accountant - Unavailable
+7. Lawyer - Unavailable
+8. Architect - Unavailable
+9. Scientist - Unavailable
+10. Journalist - Unavailable

@@ -3,6 +3,7 @@ package person;
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileReader;
+import java.lang.Thread;
 
 public class Game {
     public static void availableJobs() {
@@ -14,6 +15,11 @@ public class Game {
             int i;
             while ((i = fileReader.read()) != -1) {
                 System.out.print((char) i);
+                try {
+                    Thread.sleep(10);
+                } catch (InterruptedException e) {
+                    System.err.println("Error: " + e);
+                }
             } fileReader.close();
             System.out.println();
         } catch (Exception exception) {
