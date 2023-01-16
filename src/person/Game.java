@@ -8,13 +8,15 @@ public class Game {
     public static void availableJobs() {
         System.out.println("Available jobs:");
         try {
-            FileReader fileReader = new FileReader("src/person/jobs.txt");
+            FileReader fileReader = new FileReader("lib/jobs.txt");
             int i;
             while ((i = fileReader.read()) != -1) {
                 System.out.print((char) i);
                 try {
                     Thread.sleep(10);
                 } catch (InterruptedException e) {
+                    System.err.println("Error: " + e);
+                } catch (IllegalArgumentException e) {
                     System.err.println("Error: " + e);
                 }
             } fileReader.close();
