@@ -1,17 +1,14 @@
 package person;
 
 import java.util.Scanner;
-import java.io.File;
-import java.io.FileReader;
 import java.lang.Thread;
+import java.io.FileReader;
 
 public class Game {
     public static void availableJobs() {
-        File file = new File("src/person/jobs.txt");
-
         System.out.println("Available jobs:");
         try {
-            FileReader fileReader = new FileReader(file);
+            FileReader fileReader = new FileReader("src/person/jobs.txt");
             int i;
             while ((i = fileReader.read()) != -1) {
                 System.out.print((char) i);
